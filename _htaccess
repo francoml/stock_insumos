@@ -1,0 +1,2 @@
+ErrorDocument 404 /stock_insumos2/404.html
+ErrorDocument 403 /stock_insumos2/403.html
