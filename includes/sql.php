@@ -13,13 +13,13 @@ function find_all($table) {
 }
 
 /*--------------------------------------------------------------*/
-/* Function for find all database table rows by table name
+/* Function for find all database table rows by table ta
 /*--------------------------------------------------------------*/
 function find_allASC($table) {
    global $db;
    if(tableExists($table))
    {
-     return find_by_sql("SELECT * FROM ".$db->escape($table)." ORDER BY name ASC");
+     return find_by_sql("SELECT * FROM ".$db->escape($table)." ORDER BY ta ASC");
    }
 }
 /*--------------------------------------------------------------*/
@@ -109,7 +109,7 @@ function count_by_id($table){
   }
 }
 /*--------------------------------------------------------------*/
-/* Determine if database table exists
+/* Determina si la tabla existe en la base de datos
 /*--------------------------------------------------------------*/
 function tableExists($table){
   global $db;

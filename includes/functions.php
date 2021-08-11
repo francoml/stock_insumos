@@ -1,34 +1,43 @@
 <?php
  $errors = array();
-/*--------------------------------------------------------------*/
-/* Funcion para fecha en español
-/*--------------------------------------------------------------*/
-function get_date_spanish( $time, $part = false, $formatDate = '' )
-{
+ 
+/*----------------------------------------------------------------*/
+/* Función para mostrar fecha en español - Utilizada en el header
+/*----------------------------------------------------------------*/
+function get_date_spanish( $time, $part = false, $formatDate = '' ){
 	ini_set('date.timezone','America/Argentina/Cordoba');
-	#Declare n compatible arrays    
+	  
 	$month = array("","Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-	#n    
 	$month_execute = "n"; 
-	#format for array month    
+  # Donde 'n' es un parametro del tipo cadena format y servira para retornar -> la representación numérica del mes sin ceros iniciales
+
 	$month_mini = array("","ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "DIC");
-	#n    
 	$month_mini_execute = "n"; 
-	#format for array month    
+	# Donde 'n' es un parametro del tipo cadena format y servira para retornar -> la representación numérica del mes sin ceros iniciales   
+
 	$day = array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"); 
-	#w    
-	$day_execute = "w";        
+	$day_execute = "w";   
+  # Donde 'w' es un parametro del tipo cadena format y servira para retornar -> la representación numérica del día de la semana
+
 	$day_mini = array("DOM","LUN","MAR","MIE","JUE","VIE","SAB"); 
-	#w    
 	$day_mini_execute = "w";
-	/*Other examples:    Whether it's a leap year    
-	$leapyear = array("Este año febrero tendrá 28 días"."Si, estamos en un año bisiesto, un día más para trabajar!"); 
-	#l     $leapyear_execute = "L";*/    
-	#Content array exception print "HOY", position content the name array. Duplicate value and key for optimization in comparative    
-	$print_hoy = array("month"=>"month", "month_mini"=>"month_mini");    
+  # Donde 'w' es un parametro del tipo cadena format y servira para retornar -> la representación numérica del día de la semana
+
+	$print_hoy = array("month"=>"month", "month_mini"=>"month_mini");
+  /*
+    Tambien pudo haber sido definido de la siguiente forma y estariamos definiendo lo mismo con un indice diferente:
+      $sprint_hoy = array("month", "month_mini");   ó
+      $sprint_hoy = array(0 => "month", 1 => "month_mini");
+  */
+
+
+  # Para entender mejor lo de abajo ver el manual php de date
 	if( $part === false )
 	{
-		return $day[date("w",$time)] . " " . date("j", $time) . " de " . $month[date("n",$time)];    
+		return $day[date("w",$time)] . " " . date("j", $time) . " de " . $month[date("n",$time)];
+    # w -> número del 0 al 6
+    # j -> número del 1 al 31
+    # n -> número del 1 al 12 (como observación podemos notar que nunca devolverá 0, por ese motivo la posición 0 del array month esta vacía)    
 	}
 	elseif( $part === true )
 	{
@@ -45,6 +54,7 @@ function get_date_spanish( $time, $part = false, $formatDate = '' )
 		return date("d-m-Y", $time);   
 	}
 }
+
  /*--------------------------------------------------------------*/
  /* Function for Remove escapes special
  /* characters in a string for use in an SQL statement

@@ -2,7 +2,7 @@
 ob_start();
   $page_title = 'Nuevo Ingreso';
   require_once('includes/load.php');
-  // Checkin What level user has permission to view this page
+  //Chuequea que nivel de usuario tiene permisos para ver esta página.
   page_require_level(2);
   $all_productos = find_allASC('productos');
   $all_proveedores = find_all('proveedores');

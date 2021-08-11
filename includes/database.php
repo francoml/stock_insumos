@@ -11,7 +11,7 @@ class MySqli_DB {
     }
 
 /*--------------------------------------------------------------*/
-/* Function for Open database connection
+/* Función para abrir la conexión con la DB
 /*--------------------------------------------------------------*/
 public function db_connect()
 {
@@ -27,10 +27,10 @@ public function db_connect()
              }
          }
 }
-/*--------------------------------------------------------------*/
-/* Function for Close database connection
-/*--------------------------------------------------------------*/
 
+/*--------------------------------------------------------------*/
+/* Función para cerrar la conexión con la DB
+/*--------------------------------------------------------------*/
 public function db_disconnect()
 {
   if(isset($this->con))
@@ -39,6 +39,7 @@ public function db_disconnect()
     unset($this->con);
   }
 }
+
 /*--------------------------------------------------------------*/
 /* Function for mysqli query
 /*--------------------------------------------------------------*/
@@ -85,6 +86,7 @@ public function affected_rows()
 {
   return mysqli_affected_rows($this->con);
 }
+
 /*--------------------------------------------------------------*/
  /* Function for Remove escapes special
  /* characters in a string for use in an SQL statement
@@ -92,6 +94,7 @@ public function affected_rows()
  public function escape($str){
    return $this->con->real_escape_string($str);
  }
+ 
 /*--------------------------------------------------------------*/
 /* Function for while loop
 /*--------------------------------------------------------------*/

@@ -1,19 +1,8 @@
 <?php
-/*
-|--------------------------------------------------------------------------
-| US Technologies Inventory Management System V2
-|--------------------------------------------------------------------------
-| Author: Saeed Nawaz
-| Project Name: USTech-IMS
-| Version: v2
-| Support page: http://ustechlogix.net/
-|
-|
-|
-*/
-  define( 'DB_HOST', 'localhost' );          // Set database host
-  define( 'DB_USER', 'root' );             // Set database user
-  define( 'DB_PASS', '' );             // Set database password
-  define( 'DB_NAME', 'stock_insumos' );        // Set database name
+
+  define( 'DB_HOST', 'localhost' );          // Establece host de la db
+  define( 'DB_USER', 'root' );             // Establece usuario de la db
+  define( 'DB_PASS', '' );             // Establece contraseña de la db
+  define( 'DB_NAME', 'stock_insumos' );        // Establece nombre de la db
 
 ?>

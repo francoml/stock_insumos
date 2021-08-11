@@ -8,7 +8,7 @@
   <li>
     <a href="#" class="submenu-toggle">
       <i class="glyphicon glyphicon-user"></i>
-      <span>USUARIOS</span>
+      <span>USUARIOS!</span>
     </a>
     <ul class="nav submenu">
       <li><a href="users.php">Lista de Usuarios</a> </li>
