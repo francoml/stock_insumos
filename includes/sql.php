@@ -19,7 +19,7 @@ function find_allASC($table) {
    global $db;
    if(tableExists($table))
    {
-     return find_by_sql("SELECT * FROM ".$db->escape($table)." ORDER BY ta ASC");
+     return find_by_sql("SELECT * FROM ".$db->escape($table)." ORDER BY name ASC");
    }
 }
 /*--------------------------------------------------------------*/
@@ -98,7 +98,6 @@ function delete_by_id($table,$id)
 /*--------------------------------------------------------------*/
 /* Function for Count id  By table name
 /*--------------------------------------------------------------*/
-
 function count_by_id($table){
   global $db;
   if(tableExists($table))
