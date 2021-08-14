@@ -126,7 +126,7 @@ date_default_timezone_set('America/Argentina/Cordoba');
 								<div class="col-md-4">
 									<div class="input-group">
 										<span class="input-group-addon">Cantidad</span>
-										<input type="number" min="0" class="form-control" autocomplete="off" name="ingreso-cantidad" placeholder="" tabindex="9">
+										<input type="number" min="1" class="form-control" autocomplete="off" name="ingreso-cantidad" placeholder="" tabindex="9">
 									</div>
 								</div>
 
