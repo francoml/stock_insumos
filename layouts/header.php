@@ -34,7 +34,7 @@
 <?php if ($session->isUserLoggedIn(true)) : ?>
   <!--Header-->
   <header id="header">
-    <div class="logo pull-left">Gestión de Insumos</div>
+    <div class="logo pull-left">Gestión de Insumoooasodoasdasdaslkds</div>
     <div class="header-content">
       <div class="header-date pull-left">
         <strong><?php echo get_date_spanish(time()); ?></strong>
