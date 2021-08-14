@@ -16,10 +16,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
     <link rel="stylesheet" href="libs/css/main.css" /> -->
 
-  
-  <!-- Bootstrap 5.1-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <!-- Botstrap 3.4.1 -->
+  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
   <!-- Optional theme -->
@@ -32,7 +29,6 @@
 </head>
 
 <?php if ($session->isUserLoggedIn(true)) : ?>
-  <!--Header-->
   <header id="header">
     <div class="logo pull-left">Gestión de Insumos</div>
     <div class="header-content">
@@ -46,7 +42,6 @@
               <img src="uploads/users/<?php echo $user['image']; ?>" alt="user-image" class="img-circle img-inline">
               <span><?php echo remove_junk(ucfirst($user['name'])); ?> <i class="caret"></i></span>
             </a>
-            <!--Menu Perfil usuario-->
             <ul class="dropdown-menu">
               <li>
                 <a href="profile.php?id=<?php echo (int)$user['id']; ?>">
@@ -72,8 +67,7 @@
       </div>
     </div>
   </header>
-  <!--Navbar para cada tipo de usuario-->
-
+  <div class="sidebar">
     <?php if ($user['user_level'] === '1') : ?>
       <!-- admin menu -->
       <?php include_once('admin_menu.php'); ?>
