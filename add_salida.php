@@ -83,7 +83,7 @@ ob_start();
 			<div class="col-md-4">
             <div class="input-group">
             <span class="input-group-addon">Cantidad</span>
-            <input type="number" class="form-control" autocomplete="off" name="egreso-cantidad" placeholder="" tabindex="3">
+            <input type="number" min= "1" class="form-control" autocomplete="off" name="egreso-cantidad" placeholder="" tabindex="3">
 			
             </div>
             </div>	

@@ -328,7 +328,7 @@ function tableExists($table){
     $sql  .=" FROM salidas s";
 	$sql  .=" LEFT JOIN productos p ON p.id =s.prod"; #me mostro el nombre del producto!!
 	$sql  .=" LEFT JOIN destinatarios d ON d.id =s.destinatario"; 
-    $sql  .=" ORDER BY s.id DESC";
+    $sql  .=" ORDER BY s.id DESC LIMIT 100";
     return find_by_sql($sql);
    }
   /*--------------------------------------------------------------*/
