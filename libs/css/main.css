@@ -305,7 +305,13 @@ input[type=file]{
   width: 125px;
   height: 125px;
 }
-.barritaNav{
-  font-size: 80px;
-  background-color: black;
+
+.fecha{
+  font-size: 15px;
+  color: white;
+
+}
+
+.navbar-inverse{
+  font-size: 15px;
 }
