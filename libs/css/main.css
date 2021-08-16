@@ -149,6 +149,7 @@ body{
 }.datepicker{
   text-align: center;
 }
+
 .sidebar {
   position: fixed;
   z-index: 10;
@@ -303,4 +304,8 @@ input[type=file]{
 }img.img-size-2{
   width: 125px;
   height: 125px;
+}
+.barritaNav{
+  font-size: 80px;
+  background-color: black;
 }

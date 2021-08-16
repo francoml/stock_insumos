@@ -29,8 +29,7 @@
 </head>
 
 <?php if ($session->isUserLoggedIn(true)) : ?>
-  <header id="header">
-    <div class="logo pull-left">Gestión de Insumos</div>
+  <!--<header id="header">
     <div class="header-content">
       <div class="header-date pull-left">
         <strong><?php echo get_date_spanish(time()); ?></strong>
@@ -66,8 +65,8 @@
         </ul>
       </div>
     </div>
-  </header>
-  <div class="sidebar">
+  </header>-->
+  <nav class="navbar barritaNav">
     <?php if ($user['user_level'] === '1') : ?>
       <!-- admin menu -->
       <?php include_once('admin_menu.php'); ?>
@@ -82,7 +81,7 @@
 
     <?php endif; ?>
 
-  </div>
+    </nav>
 <?php endif; ?>
 
 <div class="page">

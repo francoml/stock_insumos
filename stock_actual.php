@@ -10,17 +10,10 @@
 <?php include_once('layouts/header.php'); ?>
 <?php echo display_msg($msg); ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
-<body>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 
 	<div class="panel panel-warning">
 	<div class="panel-heading"><b>STOCK AL DIA DE LA FECHA</b></div>
@@ -32,11 +25,13 @@
 				<input class="form-control" id="miInput" type="text" placeholder="Buscar..." style="width: 481%">
 			</div>
 	
+	<!-- Esta tabla funciona gracias a un script que podras encontrar en footer.php	 -->
+
 	  <table class="table table-striped table-bordered" style="width: 85%">
 		<thead>
 		  <tr>
 			<th style="text-align:center">#</th>
-			<th style="text-center">Producto</th>
+			<th style="text-align:center">Producto</th>
 			<th style="text-align:center">Cantidad</th>
 		  </tr>
 		</thead>
@@ -54,7 +49,7 @@
 	</div>
 	</div>
 
-	<script>
+	<!--<script>
 	$(document).ready(function(){
 	  $("#miInput").on("keyup", function() {
 		var value = $(this).val().toLowerCase();
@@ -64,9 +59,7 @@
 	  });
 	});
 	</script>
-
-</body>
-</html>
+-->
 
 <?php include_once('layouts/footer.php'); ?>
 
