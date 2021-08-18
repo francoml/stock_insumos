@@ -46,11 +46,8 @@
 </div>
 
 <div class="userFecha">
-
   <ul style="list-style-type: none;">
-
     <li class="fecha"><strong><?php echo get_date_spanish(time()); ?></strong></li>
-
     <li class="dropdown">
       <a href="#" class="perfil dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
         <img src="uploads/users/<?php echo $user['image']; ?>" alt="user-image" class="img-circle img-inline">
@@ -78,7 +75,6 @@
       </ul>
     </li>
   </ul>
-
 </div>
 
 

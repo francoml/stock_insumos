@@ -315,7 +315,7 @@ function tableExists($table){
     $sql  .=" FROM remitos r";
 	$sql  .=" LEFT JOIN productos c ON c.id =r.nombre"; #me mostro el nombre del producto!!
 	$sql  .=" LEFT JOIN proveedores p ON p.id =r.proveedor"; 
-    $sql  .=" ORDER BY r.id DESC";
+    $sql  .=" ORDER BY r.id DESC LIMIT 100";
     return find_by_sql($sql);
    }
    /*--------------------------------------------------------------*/
