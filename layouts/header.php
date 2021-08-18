@@ -66,7 +66,7 @@
       </div>
     </div>
   </header>-->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse barraNav">
     <?php if ($user['user_level'] === '1') : ?>
       <!-- admin menu -->
       <?php include_once('admin_menu.php'); ?>

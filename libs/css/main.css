@@ -26,9 +26,8 @@ body{
 }.page{
   position: relative;
   display: block;
-  top: 50px;
-  left: 0;
-  padding: 35px 15px 20px 270px;
+  margin: 50px 10px 10px 10px;
+  padding: 0;
 }
 
 .bg-green{
@@ -101,31 +100,26 @@ body{
 }.header-date{
   color: #9b9b9b;
   margin-left: 20px;
-}
-.info-menu{
-  height: 60px;
-  margin: 0;
-  line-height: 60px;
-  padding: 0 15px;
-}.info-menu li.profile {
-  position: relative;
-}.profile a.toggle{
+}.perfil{
   text-decoration: none;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   color: rgba(150, 150, 158, 1.0);
   position: relative;
-  padding: 10px 10px 10px 0;
+  padding: 7px 7px 7px 7px;
   margin: 0;
   background: #f9f9f9;
-  border-radius: 30px;
+  border-radius: 20px;
 }.info-menu li.profile a img{
+  width: 30px;
+  height: 30px;
+}.userFecha li.dropdown a img{
   width: 30px;
   height: 30px;
 }.dropdown-menu{
   margin-top: 4px;
   border-color: #fefefe;
-  border-radius: 0;
+  border-radius: 10px;
    box-shadow: 0px 0px 5px rgba(86, 96, 117, 0.15);
   -moz-box-shadow: 0px 0px 5px rgba(86, 96, 117, 0.15);
   -webkit-box-shadow: 0px 0px 5px rgba(86, 96, 117, 0.15);
@@ -148,74 +142,6 @@ body{
   border-bottom: 0;
 }.datepicker{
   text-align: center;
-}
-
-.sidebar {
-  position: fixed;
-  z-index: 10;
-  left: 0;
-  top: 0;
-  padding: 65px 0 0;
-  height: 100%;
-  width: 250px;
-  background: #1a3342;
-  border-right: 1px solid #ddd;
-  text-align: center;
-}.sidebar ul li:hover,.submenu ul li:hover{
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}.sidebar ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}.sidebar ul li {
-  display: block;
-}.sidebar ul li:hover,ul.submenu{
-  background-color:#35404d;
-}.sidebar ul li a:hover {
-  color: white;
-}.sidebar ul li a,ul.submenu li a {
-  color: #aeb2b7;
-  display: block;
-  overflow: hidden;
-  position: relative;
-  white-space: nowrap;
-  text-decoration: none;
-  text-align: left;
-}.sidebar ul li a span,.sidebar ul li i{
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 1.5px;
-  text-shadow: 0 1px rgba(0,0,0, 1);
-}.sidebar ul li a i{
-  color: #aeb2b7;
-  padding: 15px 22px;
-  text-align: center;
-}ul.submenu{
-  display: none;
-  position: relative;
-}ul.submenu li a:hover{
-  background-color:#35404d;
-}ul.submenu li a {
-  padding-left: 45px;
-}ul.submenu li:before{
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 1;
-  left: 25px;
-  top: 0;
-  bottom: 0;
-  border: 1px dotted #d7d7d7;
-  border-width: 0 0 0 1px;
-}ul.submenu li a:before{
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 7px;
-  left: 25px;
-  top: 18px;
-  border-top: 1px dotted #d7d7d7;
 }
 
 .sale_report_header{
@@ -306,12 +232,27 @@ input[type=file]{
   height: 125px;
 }
 
+
 .fecha{
-  font-size: 15px;
+  padding-bottom: 4px;
+  text-align: center;;
   color: white;
-
+}
+.barraNav{
+  margin: 0;
+  padding-top: 7px;
+  border-radius: 0;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
 }
 
-.navbar-inverse{
-  font-size: 15px;
+
+@media (max-witdh: 926px){
 }
+
+
+
+
+
