@@ -61,32 +61,6 @@ date_default_timezone_set('America/Argentina/Cordoba');
 			</div>
 		</div>
 
-		<!-- AUTOCOMPLETE -->
-		<div class="panel-body">
-			<div class="col-12">
-
-				<div class="col-md-6">
-					<select class="form-control" name="ingreso-proveedor" tabindex="4">
-						<option value="">Seleccione Proveedor</option>
-						<?php foreach ($all_proveedores as $prov) : ?>
-							<option value="<?php echo (int)$prov['id'] ?>">
-								<?php echo $prov['nombre'] ?></option>
-							<!--va a buscar el proveedor por su id, pero va a mostrar su nombre-->
-						<?php endforeach; ?>
-					</select>
-				</div>
-
-				<div class="col-md-6">
-					<div class="input-group">
-						<span class="input-group-addon">Nº Remito</span>
-						<input type="text" class="form-control" name="ingreso-remito" placeholder="" tabindex="5">
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-
 		<div class="panel-body">
 			<div class="col-12">
 
