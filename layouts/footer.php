@@ -7,8 +7,7 @@
 
      <!-- Latest compiled and minified JavaScript -->
      <script src="libs/jquery.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-     <script src="libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>     <script src="libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
      <script type="text/javascript" src="libs/js/functions.js"></script>
 
      <!-- Script que cumple la función de autocomplete filtering -->
