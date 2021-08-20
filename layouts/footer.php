@@ -23,7 +23,7 @@
      </script>
 
 
-<script>
+      <script>
         $(document).ready(function() {
            $("#miProv").on("keyup", function() {
               var value = $(this).val().toLowerCase();
