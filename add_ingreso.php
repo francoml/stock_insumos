@@ -22,7 +22,7 @@ date_default_timezone_set('America/Argentina/Cordoba');
 </div>
 
 <form method="post" action="add_ingreso2.php" class="clearfix">
-	<div class="container-fluid col-md-8 border border-dark border-2 rounded">
+	<div class="container-fluid col-md-8 border border-dark border-2 rounded box">
 		<div class="panel panel-default">
 			<div class="panel-heading text-dark fw-bolder">
 				<strong>

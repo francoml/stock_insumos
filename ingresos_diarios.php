@@ -19,7 +19,7 @@ date_default_timezone_set('America/Argentina/Cordoba');
   </div>
 </div>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 box">
       <div class="panel panel-default">
         <div class="panel-heading clearfix">
           <strong>

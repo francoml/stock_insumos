@@ -43,7 +43,7 @@
   </div>
    <div class="row">
     <div class="col-md-5">
-      <div class="panel panel-default">
+      <div class="panel panel-default box">
         <div class="panel-heading">
           <strong>
             <span class="glyphicon glyphicon-th"></span>
@@ -61,7 +61,7 @@
       </div>
     </div>
     <div class="col-md-7">
-    <div class="panel panel-default">
+    <div class="panel panel-default box">
       <div class="panel-heading">
         <strong>
           <span class="glyphicon glyphicon-th"></span>

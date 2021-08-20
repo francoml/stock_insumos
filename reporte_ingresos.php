@@ -11,11 +11,9 @@ $page_title = 'Reporte de Ingresos';
   </div>
 </div>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-4 box">
     <div class="panel">
-      <div class="panel-heading">
 
-      </div>
       <div class="panel-body">
           <form class="" method="post" action="reporte_ingresos2.php">
             <div class="form-group">

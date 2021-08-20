@@ -11,11 +11,9 @@ $page_title = 'Reporte de Salidas';
   </div>
 </div>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-4 box">
     <div class="panel">
-      <div class="panel-heading">
 
-      </div>
       <div class="panel-body">
           <form class="clearfix" method="post" action="reporte_salidas2.php">
             <div class="form-group">

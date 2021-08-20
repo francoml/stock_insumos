@@ -36,7 +36,7 @@
   </div>
    <div class="row">
     <div class="col-md-5">
-      <div class="panel panel-default">
+      <div class="panel panel-default box">
         <div class="panel-heading">
           <strong>
             <span class="glyphicon glyphicon-th"></span>
@@ -55,13 +55,13 @@
     </div>
     <div class="col-md-7">
     <div class="panel panel-default">
-      <div class="panel-heading">
+      <div class="panel-heading box">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
           <span>Lista de Productos Validados</span>
        </strong>
       </div>
-        <div class="panel-body">
+        <div class="panel-body box">
           <table class="table table-bordered table-striped table-hover">
             <thead>
                 <tr>

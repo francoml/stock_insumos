@@ -15,7 +15,7 @@ $stock_actual = join_stock_table();
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 
-<div class="panel panel-info">
+<div class="panel panel-info box">
 	<div class="panel-heading"><b>STOCK AL DIA DE LA FECHA</b></div>
 	<div class="container">
 

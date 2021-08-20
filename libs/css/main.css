@@ -189,6 +189,10 @@ align-items: center;
 .dropMenuPerfil{
   position: static;
 }
+.box{
+  background-color: white;
+}
+
 @media (min-width: 992px){
 .dropMenuPerfil{
   position: absolute;

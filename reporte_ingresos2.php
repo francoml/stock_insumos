@@ -37,10 +37,8 @@ if (isset($_POST['reporte']))
   <?php include_once('layouts/header.php'); ?>
   <div class="row">
   <div class="col-md-4">
-    <div class="panel">
-      <div class="panel-heading">
-
-      </div>
+    <div class="panel box">
+ 
       <div class="panel-body">
           <form class="clearfix" method="post" action="reporte_ingresos2.php">
             <div class="form-group">
@@ -69,7 +67,7 @@ if (isset($_POST['reporte']))
        <?php echo display_msg($msg); ?>
      </div>
     <div class="col-md-12">
-      <div class="panel panel-default">
+      <div class="panel panel-default box">
         <div class="panel-heading clearfix">
 		<strong>
             <span class="glyphicon glyphicon-th"></span>
