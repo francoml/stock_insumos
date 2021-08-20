@@ -22,12 +22,12 @@ date_default_timezone_set('America/Argentina/Cordoba');
 </div>
 
 <form method="post" action="add_ingreso2.php" class="clearfix">
-	<div class="container-fluid col-md-8 border border-primary border-2 rounded">
+	<div class="container-fluid col-md-8 border border-dark border-2 rounded">
 		<div class="panel panel-default">
-			<div class="panel-heading text-info">
+			<div class="panel-heading text-dark fw-bolder">
 				<strong>
 					<span class="glyphicon glyphicon-th"></span>
-					<span>Nuevo Ingreso</span>
+					<h3 style="text-align: center;">Nuevo Ingreso</h3>
 				</strong>
 			</div>
 			<br>
@@ -99,7 +99,7 @@ date_default_timezone_set('America/Argentina/Cordoba');
 		<br>
 		<div class="row justify-content-around">				
 			<div class="col-md-4">
-				<button type="submit" name="add_ingreso" class="btn btn-primary" tabindex="9">AGREGAR INGRESO</button>
+				<button type="submit" name="add_ingreso" class="btn btn-dark" tabindex="9">AGREGAR INGRESO</button>
 			</div>
 		</div>
 		<br>
