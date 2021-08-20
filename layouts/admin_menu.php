@@ -25,7 +25,7 @@
       </a>
       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         <li><a class="dropdown-item" href="add_salida.php">Agregar Salidas</a></li>
-        <li><a class="dropdown-item" href="salidas_diarios.php">Salidas de Hoy</a></li>
+        <li><a class="dropdown-item" href="salidas_diarias.php">Salidas de Hoy</a></li>
         <li><a class="dropdown-item" href="salidas.php">Historial de Salidas</a></li>
         <li><a class="dropdown-item" href="reporte_salidas.php">Salidas por Fecha</a></li>
       </ul>
