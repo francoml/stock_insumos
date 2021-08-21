@@ -185,11 +185,69 @@
 ?>
 <?php include_once('layouts/header.php'); ?>
 
-	<div class="row">
-	<div class="col-md-12">
-    <?php echo display_msg($msg); ?>
+	<div class="container-fluid col-9">
+	<?php echo display_msg($msg); ?>
+</div>
+
+
+<form method="post" action="add_ingreso2.php" class="clearfix">
+
+	<div class="container-fluid col-8 border border-light border-2 rounded box">
+
+
+		<div class="row estiloHeader">
+		v class="col-md-3">
+				<label for="inputdate" class="form-label">VencimientoPedido n° <</label>
+						<option value="<?php echo (int)$remito['id'] ?>">					<?php endforeach; ?>
+		</div>
+<br>
+		<div class="row justify-content-between">
+			<div class="col-md-6">
+				<label for="inputdate" class="form-label">Producto</label>
+				<select class="form-control shadow-sm" name="ingreso-nombre" tabindex="4">
+					<option value="">Seleccione Producto</option>
+					<?php foreach ($all_productos as $prod) : ?>
+						<option value="<?php echo (int)$prod['id'] ?>">
+							<?php echo $prod['name'] ?></option>
+					<?php endforeach; ?>
+				</select>
+			</div>
+			<div class="col-md-3">
+				<label for="inputdate" class="form-label">Marca</label>
+				<input type="text" class="form-control shadow-sm" name="ingreso-marca" placeholder="" tabindex="5">
+			</div>
+			<div class="col-md-3">
+				<label for="inputdate" class="form-label">Vencimiento</label>
+				<input type="text" class="datepicker form-control shadow-sm" name="ingreso-datevencimiento" autocomplete="off" placeholder="" tabindex="6">
+			</div>
+		</div>
+		<br>
+		<div class="row justify-content-between">
+			<div class="col-md-2">
+				<label for="inputdate" class="form-label">Cantidad</label>
+				<input type="number" min="1" class="form-control shadow-sm" autocomplete="off" name="ingreso-cantidad" placeholder="" tabindex="7">
+			</div>
+			<div class="col-md-6">
+				<label for="inputdate" class="form-label">Observaciones</label>
+				<textarea class="form-control shadow-sm" name="ingreso-observacion" rows="3" tabindex="8"></textarea>
+			</div>
+		</div>
+		<br><br>
+		<div class="row">
+			<div class="col-md-4">
+				<button type="submit" name="add_ingreso" class="btn btn-dark" tabindex="9">AGREGAR INGRESO</button>
+			</div>
+			</div>
+			<br>
+			<div class="row">
+			<div class="col-md-4">
+				<a href="home.php" title="cancelar" class="btn btn-dark" tabindex="10">CANCELAR</a>
+			</div>
+		</div>
+		<br>
 	</div>
-	</div>
+</form>
+
 
 		<div class="row">
 		<div class="col-md-10">

@@ -16,7 +16,7 @@ date_default_timezone_set('America/Argentina/Cordoba');
 <?php include_once('layouts/header.php'); ?>
 
 <!--Mensaje de error por falta de validación de datos-->
-<div class="container-fluid col-md-10">
+<div class="container-fluid col-9">
 	<?php echo display_msg($msg); ?>
 </div>
 
