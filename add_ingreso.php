@@ -95,19 +95,16 @@ date_default_timezone_set('America/Argentina/Cordoba');
 			</div>
 			<div class="col-md-6">
 				<label for="inputdate" class="form-label">Observaciones</label>
-				<textarea class="form-control shadow-sm" name="ingreso-observacion" rows="3" tabindex="8"></textarea>
+				<textarea class="form-control shadow-sm" name="ingreso-observacion" rows="3" tabindex=""></textarea>
 			</div>
 		</div>
 		<br><br>
-		<div class="row">
+		<div class="row justify-content-between">
 			<div class="col-md-4">
-				<button type="submit" name="add_ingreso" class="btn btn-dark" tabindex="9">AGREGAR INGRESO</button>
+				<button type="submit" name="add_ingreso" class="btn btn-dark" tabindex="8">AGREGAR INGRESO</button>
 			</div>
-			</div>
-			<br>
-			<div class="row">
-			<div class="col-md-4">
-				<a href="home.php" title="cancelar" class="btn btn-dark" tabindex="10">CANCELAR</a>
+			<div class="col-md-6">
+				<a href="home.php" title="cancelar" class="btn btn-dark" tabindex="">CANCELAR</a>
 			</div>
 		</div>
 		<br>

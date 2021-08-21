@@ -19,7 +19,79 @@ ob_start();
 	</div>
 	</div>
 
-		<div class="row">
+<form method="post" action="add_salida2.php" class="clearfix">
+
+	<div class="container-fluid col-8 border border-light border-2 rounded box">
+
+
+		<div class="row estiloHeader">
+			<h2>Nueva Salida</h2>
+		</div>
+
+		<div class="row justify-content-start">
+			<div class="col-md-2">
+				<br>
+				<label for="inputUser" class="form-label">Usuario</label>
+				<input readonly="readonly" type="text" class="form-control shadow-sm " id="inputUser" value="<?php echo $usuario['iniciales']; ?>">
+			</div>
+			<div class="col-md-4">
+				<br>
+				<label for="inputdate" class="form-label">Fecha de Salida</label>
+				<input readonly="readonly" type="text" class="form-control shadow-sm" autocomplete="off" value="<?php echo date("d/m/Y"); ?>">
+			</div>
+		</div>
+
+		<br>
+		<div class="row justify-content-start">
+			<div class="col-md-12">
+				<label for="inputdate" class="form-label">Destinatario</label>
+				<select class="form-control shadow-sm" name="egreso-destinatario" tabindex="1">
+					<option value="">Seleccione Destino</option>
+					<?php  foreach ($all_destinatarios as $dest): ?>
+					<option value="<?php echo (int)$dest['id'] ?>"> 
+					<?php echo $dest['nombredest'] ?></option> va a buscar el destinatario por su id, pero va a mostrar su nombre
+					<?php endforeach; ?>
+				</select>
+			</div>
+		</div>
+		<br>
+		<div class="row justify-content-start">
+			<div class="col-md-12">
+				<label for="inputdate" class="form-label">Producto</label>
+				<select class="form-control" name="egreso-producto" tabindex="2">
+					<option value="">Seleccione Producto</option>
+					<?php  foreach ($all_productos as $prod): ?>
+					<option value="<?php echo (int)$prod['id'] ?>"> 
+					<?php echo $prod['name'] ?></option> va a buscar el producto por su id, pero va a mostrar su nombre
+					<?php endforeach; ?>
+				</select>
+			</div>
+		</div>
+		<br>
+		<div class="row justify-content-between">
+			<div class="col-md-2">
+			<label for="inputdate" class="form-label">Cantidad</label>
+				<input type="number" min= "1" class="form-control" autocomplete="off" name="egreso-cantidad" placeholder="" tabindex="3">			
+			</div>
+			<div class="col-md-6">
+				<label for="inputdate" class="form-label">Observaciones</label>
+				<textarea class="form-control shadow-sm" name="ingreso-observacion" rows="3" tabindex=""></textarea>
+			</div>
+		</div>
+		<br><br>
+		<div class="row justify-content-between">
+			<div class="col-md-4">
+			<button type="submit" name="add_salida" class="btn btn-dark" tabindex="8" <?php $bandera=1; ?>> AGREGAR SALIDA</button>
+			</div>
+			<div class="col-md-6">
+				<a href="home.php" title="cancelar" class="btn btn-dark" tabindex="">CANCELAR</a>
+			</div>
+		</div>
+		<br>
+	</div>
+</form>
+
+		<!--<div class="row">
 		<div class="col-md-10 box">
 		<div class="panel panel-default">
         <div class="panel-heading">
@@ -59,7 +131,7 @@ ob_start();
 			<option value="">Seleccione Destino</option>
 			<?php  foreach ($all_destinatarios as $dest): ?>
 			<option value="<?php echo (int)$dest['id'] ?>"> 
-			<?php echo $dest['nombredest'] ?></option> <!--va a buscar el destinatario por su id, pero va a mostrar su nombre-->
+			<?php echo $dest['nombredest'] ?></option> va a buscar el destinatario por su id, pero va a mostrar su nombre
 			<?php endforeach; ?>
 			</select>
 			</div>	
@@ -75,7 +147,7 @@ ob_start();
 			<option value="">Seleccione Producto</option>
 			<?php  foreach ($all_productos as $prod): ?>
 			<option value="<?php echo (int)$prod['id'] ?>"> 
-			<?php echo $prod['name'] ?></option> <!--va a buscar el producto por su id, pero va a mostrar su nombre-->
+			<?php echo $prod['name'] ?></option> va a buscar el producto por su id, pero va a mostrar su nombre
 			<?php endforeach; ?>
 			</select>
 			</div>
@@ -121,7 +193,7 @@ ob_start();
 			</div>
 		</div>
 			
-	</form>
+	</form>-->
 	
 
 <?php include_once('layouts/footer.php'); ?>
