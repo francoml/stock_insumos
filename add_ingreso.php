@@ -15,39 +15,41 @@ date_default_timezone_set('America/Argentina/Cordoba');
 
 <?php include_once('layouts/header.php'); ?>
 
-<div class="row">
-	<div class="col-md-12">
-		<?php echo display_msg($msg); ?>
-	</div>
+<!--Mensaje de error por falta de validación de datos-->
+<div class="container-fluid col-md-10">
+	<?php echo display_msg($msg); ?>
 </div>
 
+
 <form method="post" action="add_ingreso2.php" class="clearfix">
-	<div class="container-fluid col-md-8 border border-dark border-2 rounded box">
-		<div class="panel panel-default">
-			<div class="panel-heading text-dark fw-bolder">
-				<strong>
-					<span class="glyphicon glyphicon-th"></span>
-					<h3 style="text-align: center;">Nuevo Ingreso</h3>
-				</strong>
-			</div>
-			<br>
+
+	<div class="container-fluid col-8 border border-light border-2 rounded box">
+
+
+		<div class="row estiloHeader">
+			<h2>Nuevo Ingreso</h2>
 		</div>
-		<div class="row justify-content-between">
-			<div class="col-md-1">
+
+		<div class="row">
+			<div class="col-md-2">
+				<br>
 				<label for="inputUser" class="form-label">Usuario</label>
 				<input readonly="readonly" type="text" class="form-control shadow-sm " id="inputUser" value="<?php echo $usuario['iniciales']; ?>">
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-4">
+				<br>
 				<label for="inputdate" class="form-label">Fecha de Carga</label>
 				<input readonly="readonly" type="text" class="form-control shadow-sm" autocomplete="off" value="<?php echo date("d/m/Y"); ?>">
 			</div>
-			<div class="col-md-3">
-				<label for="inputdate" class="form-label">Fecha de Ingreso</label>
-				<input type="text" class="datepicker form-control shadow-sm" name="ingreso-dateingreso" autocomplete="off" placeholder="" tabindex="1">
+			<div class="col-md-4">
+				<br>
+				<label for="inputdate" class="form-label ">Fecha de Ingreso</label>
+				<input type="text" class="form-control shadow-sm datepicker" name="ingreso-dateingreso" autocomplete="off" placeholder="" tabindex="1">
 			</div>
 		</div>
+
 		<br>
-		<div class="row justify-content-between">
+		<div class="row">
 			<div class="col-md-6">
 				<label for="inputdate" class="form-label">Proveedor</label>
 				<select class="form-control shadow-sm" name="ingreso-proveedor" tabindex="2">
@@ -64,7 +66,7 @@ date_default_timezone_set('America/Argentina/Cordoba');
 				<input type="text" class="form-control shadow-sm" name="ingreso-remito" placeholder="" tabindex="3">
 			</div>
 		</div>
-		<br>	
+		<br>
 		<div class="row justify-content-between">
 			<div class="col-md-6">
 				<label for="inputdate" class="form-label">Producto</label>
@@ -82,11 +84,11 @@ date_default_timezone_set('America/Argentina/Cordoba');
 			</div>
 			<div class="col-md-3">
 				<label for="inputdate" class="form-label">Vencimiento</label>
-				<input type="text" class="datepicker form-control shadow-sm" name="ingreso-datevencimiento" autocomplete="off" placeholder="" tabindex="6">			
+				<input type="text" class="datepicker form-control shadow-sm" name="ingreso-datevencimiento" autocomplete="off" placeholder="" tabindex="6">
 			</div>
 		</div>
-		<br>	
-		<div class="row justify-content-around">				
+		<br>
+		<div class="row justify-content-around">
 			<div class="col-md-2">
 				<label for="inputdate" class="form-label">Cantidad</label>
 				<input type="number" min="1" class="form-control shadow-sm" autocomplete="off" name="ingreso-cantidad" placeholder="" tabindex="7">
@@ -96,16 +98,21 @@ date_default_timezone_set('America/Argentina/Cordoba');
 				<textarea class="form-control shadow-sm" name="ingreso-observacion" rows="3" tabindex="8"></textarea>
 			</div>
 		</div>
-		<br>
-		<div class="row justify-content-around">				
+		<br><br>
+		<div class="row">
 			<div class="col-md-4">
 				<button type="submit" name="add_ingreso" class="btn btn-dark" tabindex="9">AGREGAR INGRESO</button>
+			</div>
+			</div>
+			<br>
+			<div class="row">
+			<div class="col-md-4">
+				<a href="home.php" title="cancelar" class="btn btn-dark" tabindex="10">CANCELAR</a>
 			</div>
 		</div>
 		<br>
 	</div>
 </form>
-<br>
 
 <!--<form method="post" action="add_ingreso2.php" class="clearfix">
 
