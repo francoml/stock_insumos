@@ -14,8 +14,14 @@
       <div class="panel panel-default">
         <div class="panel-heading clearfix">
 		<strong>
-            <span class="glyphicon glyphicon-th"></span>
-            <span>HISTORIAL DE SALIDAS</span>
+    <div class="row estiloHeader">
+      <h2>Historial de Salidas</h2>
+    </div>
+    <br>
+    <div class="pull-right">
+      <a href="add_salida.php" class="btn btn-dark">Agregar Nueva Salida</a>
+    </div>
+    <br>
           </strong>
         </div>
         <div class="panel-body">

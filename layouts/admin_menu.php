@@ -1,5 +1,7 @@
-<a class="navbar-brand" href="home.php">SGI-CBA</a>
 
+<a class="navbar-brand" href="home.php">
+  <img src="uploads/logo.png" width="60" height="60" class="img-fluid" alt="">
+</a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
