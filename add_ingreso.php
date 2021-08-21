@@ -88,7 +88,7 @@ date_default_timezone_set('America/Argentina/Cordoba');
 			</div>
 		</div>
 		<br>
-		<div class="row justify-content-around">
+		<div class="row justify-content-between">
 			<div class="col-md-2">
 				<label for="inputdate" class="form-label">Cantidad</label>
 				<input type="number" min="1" class="form-control shadow-sm" autocomplete="off" name="ingreso-cantidad" placeholder="" tabindex="7">
