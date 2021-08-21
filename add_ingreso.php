@@ -25,7 +25,6 @@ date_default_timezone_set('America/Argentina/Cordoba');
 
 	<div class="container-fluid col-8 border border-light border-2 rounded box">
 
-
 		<div class="row estiloHeader">
 			<h2>Nuevo Ingreso</h2>
 		</div>
@@ -49,6 +48,7 @@ date_default_timezone_set('America/Argentina/Cordoba');
 		</div>
 
 		<br>
+
 		<div class="row">
 			<div class="col-md-6">
 				<label for="inputdate" class="form-label">Proveedor</label>
@@ -60,13 +60,15 @@ date_default_timezone_set('America/Argentina/Cordoba');
 						<!--va a buscar el proveedor por su id, pero va a mostrar su nombre-->
 					<?php endforeach; ?>
 				</select>
-			</div>
+			</div> 
 			<div class="col-md-5">
 				<label for="inputdate" class="form-label">Remito</label>
 				<input type="text" class="form-control shadow-sm" name="ingreso-remito" placeholder="" tabindex="3">
 			</div>
 		</div>
+
 		<br>
+		
 		<div class="row justify-content-between">
 			<div class="col-md-6">
 				<label for="inputdate" class="form-label">Producto</label>
@@ -87,7 +89,9 @@ date_default_timezone_set('America/Argentina/Cordoba');
 				<input type="text" class="datepicker form-control shadow-sm" name="ingreso-datevencimiento" autocomplete="off" placeholder="" tabindex="6">
 			</div>
 		</div>
+
 		<br>
+
 		<div class="row justify-content-between">
 			<div class="col-md-2">
 				<label for="inputdate" class="form-label">Cantidad</label>
@@ -95,16 +99,19 @@ date_default_timezone_set('America/Argentina/Cordoba');
 			</div>
 			<div class="col-md-6">
 				<label for="inputdate" class="form-label">Observaciones</label>
-				<textarea class="form-control shadow-sm" name="ingreso-observacion" rows="3" tabindex=""></textarea>
+				<textarea class="form-control shadow-sm" name="ingreso-observacion" rows="3" tabindex="8"></textarea>
 			</div>
 		</div>
+
 		<br><br>
-		<div class="row justify-content-between">
-			<div class="col-md-4">
-				<button type="submit" name="add_ingreso" class="btn btn-dark" tabindex="8">AGREGAR INGRESO</button>
+
+		<div class="row justify-content-end">
+			<div class="col-md-2">
+				<a href="home.php" class="btn btn-dark hoverDeny" tabindex=""><i class="bi bi-x-square"></i>    CANCELAR</a>
 			</div>
-			<div class="col-md-6">
-				<a href="home.php" title="cancelar" class="btn btn-dark" tabindex="">CANCELAR</a>
+			<br> <br>
+			<div class="col-md-3">
+				<button type="submit" name="add_ingreso" class="btn btn-dark hoverAccept" tabindex="9"><i class="bi bi-plus-square"></i>   CARGAR REMITO</button>
 			</div>
 		</div>
 		<br>
