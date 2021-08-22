@@ -212,9 +212,6 @@ align-items: center;
 .flexColumna{
   flex-direction: column;
 }
-.bordellamativo{
-  background-color: grey;
-}
 
 @media (min-width: 992px){
 .dropMenuPerfil{
