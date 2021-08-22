@@ -161,9 +161,9 @@ if (isset($_POST['add_salida2'])) {
 <?php include_once('layouts/header.php'); ?>
 
 <div class="container-fluid col-9">
-
 	<?php echo display_msg($msg); ?>
 </div>
+
 <form method="post" action="add_salida2.php" class="clearfix">
 
 	<div class="container-fluid col-8 border border-light border-2 rounded box">
@@ -215,5 +215,7 @@ if (isset($_POST['add_salida2'])) {
 		<br>
 	</div>
 </form>
+
+
 
 <?php include_once('layouts/footer.php'); ?>

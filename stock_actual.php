@@ -8,57 +8,49 @@ $stock_actual = join_stock_table();
 ?>
 
 <?php include_once('layouts/header.php'); ?>
-<?php echo display_msg($msg); ?>
 
-
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
-
-<div class="panel panel-info box">
-	<div class="panel-heading"><b>STOCK AL DIA DE LA FECHA</b></div>
-	<div class="container">
-
-		<div class="panel-body">
-			<br />
-			<div class="input-group">
-				<input class="form-control" id="miInput" type="text" placeholder="Buscar..." style="width: 481%">
-			</div>
-
-			<!-- Esta tabla funciona gracias a un script que podras encontrar en footer.php	 -->
-
-			<table class="table table-striped table-bordered" style="width: 85%">
-				<thead>
-					<tr>
-						<th style="text-align:center">#</th>
-						<th style="text-align:center">Producto</th>
-						<th style="text-align:center">Cantidad</th>
-					</tr>
-				</thead>
-				<tbody id="miTabla">
-					<?php foreach ($stock_actual as $stock) : ?>
-						<tr>
-							<td class="text-center" style="width:1%"> <?php echo count_id(); ?></td>
-							<td class="text" style="width:50%"> <?php echo remove_junk($stock['name']); ?></td>
-							<td class="text-center" style="width: 2%;"> <?php echo remove_junk($stock['total']); ?></td>
-						</tr>
-					<?php endforeach; ?>
-				</tbody>
-			</table>
-		</div>
-	</div>
+<div class="container-fluid col-9">
+	<?php echo display_msg($msg); ?>
 </div>
 
-<!--<script>
-	$(document).ready(function(){
-	  $("#miInput").on("keyup", function() {
-		var value = $(this).val().toLowerCase();
-		$("#miTabla tr").filter(function() {
-		  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-		});
-	  });
-	});
-	</script>
--->
+<div class="container-fluid col-8 border border-light border-2 rounded box">
+
+
+	<div class="row estiloHeader">
+		<h2>STOCK AL DIA DE LA FECHA</h2>
+	</div>
+
+	<br>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="input-group flex-nowrap">
+				<span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
+				<input type="text" class="form-control" id="miInput" placeholder="Buscar...">
+			</div>
+		</div>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-dark table-striped">
+			<thead>
+				<tr>
+					<th class="text-center">#</th>
+					<th class="text-center">Producto</th>
+					<th class="text-center">Cantidad</th>
+				</tr>
+			</thead>
+			<tbody id="miTabla">
+				<?php foreach ($stock_actual as $stock) : ?>
+					<tr>
+						<td class="text-center"> <?php echo count_id(); ?></td>
+						<td class="text"> <?php echo remove_junk($stock['name']); ?></td>
+						<td class="text-center"> <?php echo remove_junk($stock['total']); ?></td>
+					</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+	</div>
+</div>
 
 <?php include_once('layouts/footer.php'); ?>
