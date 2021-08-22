@@ -42,11 +42,11 @@ if (isset($_POST['add_prov'])) {
     </div>
 
     <div class="row">
-      <div class="col-7">
+      <div class="col-sm-5 col-md-6">
         <input type="text" name="proveedor-nombre" class="form-control" autocomplete="off" tabindex="1" placeholder="Nombre...">
       </div>
 
-      <div class="col-md-4">
+      <div class="col-sm-5 col-md-4">
         <button type="submit" name="add_prov" class="btn btn-dark hoverAccept" tabindex="2"><i class="bi bi-plus-square"></i> AGREGAR PROVEEDOR</button>
       </div>
     </div>

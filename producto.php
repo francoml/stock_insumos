@@ -42,16 +42,16 @@ if (isset($_POST['add_prod'])) {
     </div>
 
     <div class="row">
-      <div class="col-7">
+      <div class="col-sm-5 col-md-6">
         <input type="text" name="producto-nombre" class="form-control" autocomplete="off" tabindex="1" placeholder="Nombre...">
       </div>
 
-      <div class="col-md-4">
+      <div class="col-sm-5 col-md-4">
         <button type="submit" name="add_prod" class="btn btn-dark hoverAccept" tabindex="2"><i class="bi bi-plus-square"></i> AGREGAR PRODUCTO</button>
       </div>
-    </div>
-
+      </div>
 </form>
+
 
 <br>
 
@@ -89,6 +89,7 @@ if (isset($_POST['add_prod'])) {
       <?php endforeach; ?>
     </tbody>
   </table>
+</div>
 </div>
 
 <?php include_once('layouts/footer.php'); ?>

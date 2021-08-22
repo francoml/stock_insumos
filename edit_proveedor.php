@@ -44,30 +44,33 @@ if(isset($_POST['editar_prov']))
 ?>
 <?php include_once('layouts/header.php'); ?>
 
-<div class="row">
-   <div class="col-md-12">
-     <?php echo display_msg($msg); ?>
-   </div>
-   <div class="col-md-5">
-     <div class="panel panel-default">
-       <div class="panel-heading">
-         <strong>
-           <span class="glyphicon glyphicon-th"></span>
-           <span>Modificando <?php echo remove_junk(ucfirst($proveedor['nombre']));?></span>
-        </strong>
-       </div>
-       <div class="panel-body">	
-         <form method="post" action="edit_proveedor.php?id=<?php echo (int)$proveedor['id'];?>">
-           <div class="form-group">
-               <input type="text" class="form-control" name="nombre-proveedor" value="<?php echo remove_junk(ucfirst($proveedor['nombre']));?>">
-           </div>
-           <button type="submit" name="editar_prov" class="btn btn-primary">Modificar Proveedor</button>
-       </form>
-       </div>
-     </div>
-   </div>
+
+<div class="container-fluid col-9">
+  <?php echo display_msg($msg); ?>
 </div>
 
 
+<div class="container-fluid col-6 border border-light border-2 rounded box">
+
+  <div class="row">
+    <form method="post" action="edit_proveedor.php?id=<?php echo (int)$proveedor['id']; ?>">
+
+      <div class="row">
+        <label for="inputdate" class="form-label"><strong>Modificando '<?php echo remove_junk(ucfirst($proveedor['nombre'])); ?>'</strong></label>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-5 col-md-8">
+          <input type="text" name="nombre-proveedor" class="form-control" autocomplete="off" tabindex="1" value="<?php echo remove_junk(ucfirst($proveedor['nombre'])); ?>">
+        </div>
+
+        <div class="col-sm-5 col-md-4">
+          <button type="submit" name="editar_prov" class="btn btn-dark hoverAccept" tabindex="2"><i class="bi bi-check-square"></i></i> ACEPTAR</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>
 
 <?php include_once('layouts/footer.php'); ?>
