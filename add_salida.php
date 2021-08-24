@@ -80,11 +80,10 @@ $usuario = getIniciales();
 
 		<br><br>
 
-		<div class="row justify-content-end">
-			<div class="col-md-2">
+		<div class="row justify-content-start">
+			<div class="col-md-6">
 				<a href="home.php" class="btn btn-dark hoverDeny" tabindex=""><i class="bi bi-x-square"></i> CANCELAR</a>
 			</div>
-			<br> <br>
 			<div class="col-md-3">
 				<button type="submit" name="add_salida" class="btn btn-dark hoverAccept" tabindex="5"><i class="bi bi-plus-square"></i> CARGAR SALIDA</button>
 			</div>

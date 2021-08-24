@@ -6,12 +6,12 @@
 ?>
 <?php include_once('layouts/header.php'); ?>
 
-<div class="login-page">
-    <div class="text-center">
-       <h1>Bienvenido</h1>
-       <p>Sistema de Gestión de Insumos</p>
-     </div>
-     <?php echo display_msg($msg); ?>
+<div class="container-fluid col-4 border border-4 border-info p-0">
+  <div class="row estiloHeader">
+      <div class="col">
+      <img src="pictures/sgilargo1.png" width="250" height="250" class="img-fluid" alt="">
+      </div>
+      <?php echo display_msg($msg); ?>
       <form method="post" action="auth.php" class="clearfix">
         <div class="form-group">
               <label for="username" class="control-label">Usuario</label>
@@ -21,10 +21,11 @@
             <label for="Password" class="control-label">Contraseña</label>
             <input type="password" name= "password" class="form-control" placeholder="">
         </div>
+        <br>
         <div class="form-group">
                 <button type="submit" class="btn btn-info  pull-right">Iniciar Sesión</button>
         </div>
-    </form>
+      </form>
+  </div>
 </div>
-
 <?php include_once('layouts/footer.php'); ?>
