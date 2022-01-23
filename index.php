@@ -6,7 +6,7 @@
 ?>
 <?php include_once('layouts/header.php'); ?>
 
-<div class="container-fluid col-4 border border-4 border-info p-0">
+<div class="container col-md-4">
   <div class="row estiloHeader">
       <div class="col">
       <img src="pictures/sgilargo1.png" width="250" height="250" class="img-fluid" alt="">
@@ -23,7 +23,7 @@
         </div>
         <br>
         <div class="form-group">
-                <button type="submit" class="btn btn-info  pull-right">Iniciar Sesión</button>
+                <button type="submit" class="btn btn-info pull-right hoverInicio">Iniciar Sesión</button>
         </div>
       </form>
   </div>

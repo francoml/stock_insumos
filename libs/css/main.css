@@ -191,10 +191,12 @@ align-items: center;
 }
 .estiloHeader{
   margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 10px;
-  padding-bottom: 4px;
+  padding-bottom: 15px;
   color: #fff;
-  background-color: #212529;
+  background-color: #020202;
   border-color: #212529;
   text-align: center;
   border-radius: 10px;
@@ -206,6 +208,11 @@ align-items: center;
 }
 .hoverAccept:hover{
   background-color: limegreen;
+  transition: all 0.5s 0.1s;
+}
+.hoverInicio:hover{
+  background-color: black;
+  color: white;
   transition: all 0.5s 0.1s;
 }
 .flexColumna{
